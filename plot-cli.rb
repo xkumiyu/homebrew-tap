@@ -10,6 +10,7 @@ class PlotCli < Formula
   depends_on "freetype"
   depends_on "jpeg"
   depends_on "libpng"
+  depends_on "numpy"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/40/a7/ded59fa294b85ca206082306bba75469a38ea1c7d44ea7e1d64f5443d67a/certifi-2020.6.20.tar.gz"
@@ -34,11 +35,6 @@ class PlotCli < Formula
   resource "matplotlib" do
     url "https://files.pythonhosted.org/packages/58/bd/d3b13e93c01226901ceb50a14c110b5722f446e456f7f4fd7fd231b33742/matplotlib-3.3.1.tar.gz"
     sha256 "87f53bcce90772f942c2db56736788b39332d552461a5cb13f05ff45c1680f0e"
-  end
-
-  resource "numpy" do
-    url "https://files.pythonhosted.org/packages/bf/e8/15aea783ea72e2d4e51e3ec365e8dc4a1a32c9e5eb3a6d695b0d58e67cdd/numpy-1.19.2.zip"
-    sha256 "0d310730e1e793527065ad7dde736197b705d0e4c9999775f212b03c44a8484c"
   end
 
   resource "pandas" do
